@@ -40314,16 +40314,16 @@ var Scoring = function (_Component) {
     }
   }, {
     key: 'setScoringHref',
-    value: function setScoringHref(id, data, feedbackUrl) {
-      console.log(feedbackUrl);
+    value: function setScoringHref(id, data) {
+      //console.log(feedbackUrl);
       if (this.state.scoringHref && this.state.scoringHref.id === id) {
         return;
       }
       this.setState({
         scoringHref: { id: id, value: data },
         scoringResult: null,
-        feedbackUrl: feedbackUrl,
-        feedbackResult: null
+        //feedbackUrl: feedbackUrl,
+        //feedbackResult: null
       });
     }
   }, {

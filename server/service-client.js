@@ -24,7 +24,7 @@ const TOKEN_PATH = '/v3/identity/token';
 
 const modelInfo = require('../config/model.json');
 const schema = modelInfo['model-schema'].map(obj => obj.name);
-const feedback_schema = schema.concat([modelInfo['label']])
+const feedback_schema = schema.concat([modelInfo['label']]);
 
 function getTokenFromTokenEndoint (tokenEndpoint, user, password) {
   debug('getTokenFromTokenEndoint', tokenEndpoint);
